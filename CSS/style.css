@@ -1,31 +1,77 @@
 body {
     margin: 0;
+    background-color:#2f2f2f;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+.Wronted
+{
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px;
 }
 
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
+.navigation li,a,button {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+    font-size: 115%;
+    color: #edf0f1;
     text-decoration: none;
-    }
+}
 
-li a.active {
-    background-color: #04AA6D;
-    color: white;
-    }
+.navigation header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    background-color: #2f2f2f;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+}
 
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+.navigation .logo {
+    width: 15%;
+    padding: 0.5%;
+    cursor: pointer;
+    order: 1;
+    background-color: #2f2f2f;
+    margin-right: auto;
+}
+.navigation .logo:hover{
+    background-color: #ffffff48;
+}
+
+.navigation nav {
+    order: 1;
+    display: block;
+}
+
+.navigation .nav_links {
+    list-style: none;
+    background-color: #2f2f2f;
+}
+.navigation .nav_links li {
+    display: inline-block;
+    background-color: #2f2f2f;
+    padding: 0px 10px;
+}
+
+.navigation .nav_links li:nth-child(1) {
+    padding: 0px 20px 0px 0px;
+}
+
+.navigation .nav_links li a {
+    background-color: #2f2f2f;
+    transition: all 0.3s ease 0s;
+    color: #ffff;
+}
+
+.navigation .nav_links li a:hover {
+    color: #ffae00;
+}
+
+.navigation .container {
+    display: none;
+    background-color: #2f2f2f;
+    order: 4;
+    cursor: pointer;
 }
