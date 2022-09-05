@@ -37,13 +37,15 @@
 
     <section class="main-section">
         <div class="contact-form">
-            <div class="contact-form-info">
-                <input type="text" placeholder="First Name" class="first-name">
-                <input type="text" placeholder="Last Name" class="last-name">
-                <input type="email" placeholder="Email" class="email">
-                <textarea class="massage" placeholder="Write something here"></textarea>
-                <input type="submit" value="Submit" class="submit-btn">
-            </div>
+            <form action="mail.php" method="post"></form>
+                <div class="contact-form-info">
+                    <input type="text" name="First-Name" placeholder="First Name" class="first-name">
+                    <input type="text" name="Last-Name" placeholder="Last Name" class="last-name">
+                    <input type="email" name="email" placeholder="Email" class="email">
+                    <textarea class="massage" name="message" placeholder="Write something here"></textarea>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </div>
+            </form>
         </div>
 
         <div class="image-section">
