@@ -1,0 +1,26 @@
+.footer-section {
+    background-color: rgb(53, 52, 52);
+    height: 150px;
+}
+
+.foot-main-logo {
+    width: 150px;
+}
+
+.footer-text {
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot-text-span {
+    color: rgb(240, 169, 37);
+    font-weight: bold;
+}
+
