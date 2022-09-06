@@ -10,8 +10,11 @@ $txt ="First Name: ". $firstname . "\r\nLast Name: " . $lastname ."\r\n  Email: 
 $headers = "From: noreply@wolf3team.com" .
 if(empty($firstname) || empty($lastname) || empty($email) || empty($message) || empty($to))
 {
+    echo "Please fill all the fields";
+}
+else{
     mail($to,$subject,$txt,$headers);
-    echo "<script typ='text/javascript'>alert('Message Sent Successfully!');
+    echo "<script type='text/javascript'>alert('Message Sent Successfully!');
         window.history.go(-1);
         </script>";
 }
