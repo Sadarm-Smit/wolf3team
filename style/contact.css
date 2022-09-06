@@ -15,19 +15,10 @@ body {
     padding: 10px;
 }
 
-.first-name, .last-name, .email{
+.email{
     padding: 10px;
     margin-bottom: 10px;
     font-size: 13px;
-}
-
-.first-name{
-    margin-right: 10px;
-    width: 230px;
-}
-
-.last-name{
-    width: 232px;
 }
 
 .email{
@@ -43,7 +34,7 @@ body {
 }
 
 .submit-btn{
-    background-color: rgb(53, 52, 52);
+    background-color: rgb(74, 59, 43);
     border: 1px solid rgb(240, 169, 37);
     padding: 10px 190px;
     border-radius: 30px;
