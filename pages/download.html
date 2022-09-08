@@ -16,11 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- <script src="../javascript/java.js" type="text/javascript"></script> -->
     <title>Wolf3team | Download</title>
 </head>
 
-<body>
+<body id="body">
     <section class="header-section">
         <div class="header">
             <div class="left-section">
@@ -39,59 +38,34 @@
         </div>
     </section>
 
-    <section class="main-section">
-        <div class="preview-section">
-            <di id="subject-file" class="subject-file">
-            </di>
-            <div class="news">
-
+        <section class="card-container" id="card-container" >
+            <!--------------------------------------- first-rows ------------------------------------------>
+            <div class="card-grid" id="card-grid">
+                <div class="cards">
+                    <img src="../image/Lesson/Lesson1.png" alt="card-1" class="image-card">
+                    <div class="card-info">
+                        <div class="card-content">
+                            <div class="left">
+                                <h1 id="Lesson">Lesson 1</h1>
+                            </div>
+                            <div class="right">
+                                <span>02/09/2022</span>
+                            </div>
+                        </div>
+                        
+                        <div class="btn">
+                            <a id="btn_a" target="_blank" href="https://drive.google.com/file/d/1hgibLIc0uN-I1qH-sti7TSavMqwrC5H-/view?usp=sharing"><button class="card-download-btn">Download</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
     <section class="footer-section">
         <div class="footer">
-            <p class="footer-text" style="font-family: Arial, Helvetica, sans-serif;">Copyright 2022 by <span class="foot-text-span">BlenderSovann</span>. All Rights Reserved.
+            <p class="footer-text">Copyright 2022 by <span class="foot-text-span">BlenderSovann</span>. All Rights Reserved.
             </p>
             <a href="../index.html"><img src="../image/main-logo.png" class="foot-main-logo"></a>
         </div>
     </section>
-    <script>
-        // Create element:
-        CreateLayout("Lesson1","Home");
-        CreateLayout("Lesson1","Home");
-        function CreateLayout(string, filename)
-        {
-            const div = document.createElement("div");
-            const textBox = document.createElement("div");
-            const img = document.createElement("img");
-            const download = document.createElement("a");
-            const textbox = document.createElement("a");
-            // para.innerHTML = "This is a paragraph.";
-            div.id = "layout";
-            textBox.id = "text";
-            img.src = "../image/zip.png";
-            download.innerHTML = "Downlaod";
-            download.className = "download";
-            download.id = "download";
-            textbox.innerHTML = string;
-            textbox.className = "textbox";
-            
-            var btnDown = document.querySelector("#downlaod");
-            btnDown = download;
-            
-            btnDown.addEventListener("click", function() {
-                if(string = "Lesson1"){
-                    download.href = "https://www.youtube.com/watch?v=HpL46SEaFS4";
-                }
-            });
-            // Append to another element:
-            document.getElementById("subject-file").appendChild(div);
-            document.getElementById("layout").appendChild(img);
-            document.getElementById("layout").appendChild(textBox);
-            document.getElementById("text").appendChild(download);
-            document.getElementById("text").appendChild(textbox);
-        }
-        </script>
 </body>
 </html>
