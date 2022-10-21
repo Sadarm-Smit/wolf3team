@@ -54,7 +54,24 @@
                         </div>
                         
                         <div class="btn">
-                            <a id="btn_a" target="_blank" href="https://www.wolf3team.com/file/Lesson1.zip"><button class="card-download-btn">Download</button></a>
+                            <a id="btn_a" target="_blank" href="../file/Lesson1.zip"><button class="card-download-btn">Download</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../image/Lesson/Lesson1.png" alt="card-1" class="image-card">
+                    <div class="card-info">
+                        <div class="card-content">
+                            <div class="left">
+                                <h1 id="Lesson">Lesson 1</h1>
+                            </div>
+                            <div class="right">
+                                <span>02/09/2022</span>
+                            </div>
+                        </div>
+                        
+                        <div class="btn">
+                            <a id="btn_a" target="_blank" href="../file/Lesson1.zip"><button class="card-download-btn">Download</button></a>
                         </div>
                     </div>
                 </div>
@@ -67,5 +84,22 @@
             <a href="../index.html"><img src="../image/main-logo.png" class="foot-main-logo"></a>
         </div>
     </section>
+    <script> 
+    create();
+    function create()
+    {
+        console.log("Hit");
+        const card_grid = document.createElement("div")
+        const cards = document.createElement("div")
+        const lesson = document.createElement("img");
+        const card_info = document.createElement("div");
+        const card_content = document.createElement("div");
+        const left = document.createElement("div");
+        const h1 = document.createElement("h1");
+        const right = document.createElement("div");
+        const span = document.createElement("span");
+        const btn = document.createElement("div");
+    }
+    </script>
 </body>
 </html>
